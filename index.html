@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle || Multiple</title>
+    <!-- Style CSS -->
+    <style>
+        body {
+            background-color: cyan;
+        }
+        div{
+            width: 0;
+            height: 0;
+            border-left: 125px solid transparent;
+            border-right: 125px solid transparent;
+            border-bottom: 100px solid transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-40%);
+            z-index: 20px;
+        }
+        div:first-of-type{
+            border-bottom-color: #052d302f;
+            transform: translate(-50%,-100%);
+            z-index: 100;
+
+        }
+        div:nth-child(2){
+            border-bottom-color: #ff000028;
+            transform: translate(-50%,-40%);
+            /* z-index: -100; */
+        }
+        div:last-of-type{
+            border-bottom-color: #00000028;
+            transform: translate(-50%,10%);
+            z-index: -100;
+
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
